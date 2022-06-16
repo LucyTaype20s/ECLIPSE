@@ -1,0 +1,15 @@
+package com.idat.evc02.servicio;
+
+import java.util.List;
+
+import javax.jws.WebService;
+
+@WebService
+public class ServicioFactura {
+	public List<Factura> ListadoFacturas() {
+		
+		
+		
+		return "";
+	}
+}

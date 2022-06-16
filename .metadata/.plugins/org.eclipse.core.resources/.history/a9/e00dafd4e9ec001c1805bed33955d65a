@@ -1,0 +1,15 @@
+package com.idat.evc02.servicio;
+
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Endpoint.publish("http://localhost:8089/ws/persona",new ServicioFactura());
+		System.out.println("Servicio persona iniciado");
+
+
+	}
+
+}

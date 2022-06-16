@@ -1,0 +1,10 @@
+package com.idat.semana01.servicio;
+
+public class Publicar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.idat.evc02.servicio;
+
+
+
+
+public class ServicioFactura {
+	public String saludar(String nombre) {
+		return "Hola "+nombre+" !";
+	}
+}

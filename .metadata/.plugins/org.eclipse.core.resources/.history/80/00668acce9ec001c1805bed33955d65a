@@ -1,0 +1,7 @@
+package com.idat.evc02.servicio;
+@webservice
+public class ServicioFactura {
+	public String ver() {
+		return "";
+	}
+}

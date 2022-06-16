@@ -1,0 +1,7 @@
+package com.idat.semana01.servicio;
+
+public class ServicioPersona {
+	public String saludar(String nombre) {
+		
+	}
+}

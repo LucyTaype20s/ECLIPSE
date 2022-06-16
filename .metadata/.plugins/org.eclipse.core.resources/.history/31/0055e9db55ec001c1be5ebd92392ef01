@@ -1,0 +1,12 @@
+package com.idat.semana01.servicio;
+
+import javax.jws.WebService;
+
+
+//los mètodos seràn del servicio web
+@WebService
+public class ServicioPersona {
+	public String saludar(String nombre) {
+		return "Hola "+nombre+" !";
+	}
+}

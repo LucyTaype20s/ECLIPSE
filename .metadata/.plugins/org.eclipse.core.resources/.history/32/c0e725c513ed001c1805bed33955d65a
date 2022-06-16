@@ -1,0 +1,53 @@
+package com.idat.evc02.servicio;
+
+public class Factura {
+	private String NumFac;
+	private String Cliente;
+	private String FechaVenta;
+	private String FechaVencimiento;
+	private double MontoTotal;
+	public String getNumFac() {
+		return NumFac;
+	}
+	public void setNumFac(String numFac) {
+		NumFac = numFac;
+	}
+	public String getCliente() {
+		return Cliente;
+	}
+	public void setCliente(String cliente) {
+		Cliente = cliente;
+	}
+	public String getFechaVenta() {
+		return FechaVenta;
+	}
+	public void setFechaVenta(String fechaVenta) {
+		FechaVenta = fechaVenta;
+	}
+	public String getFechaVencimiento() {
+		return FechaVencimiento;
+	}
+	public void setFechaVencimiento(String fechaVencimiento) {
+		FechaVencimiento = fechaVencimiento;
+	}
+	public double getMontoTotal() {
+		return MontoTotal;
+	}
+	public void setMontoTotal(double montoTotal) {
+		MontoTotal = montoTotal;
+	}
+	public Factura(String numFac, String cliente, String fechaVenta, String fechaVencimiento, double montoTotal) {
+		super();
+		NumFac = numFac;
+		Cliente = cliente;
+		FechaVenta = fechaVenta;
+		FechaVencimiento = fechaVencimiento;
+		MontoTotal = montoTotal;
+	}
+	public Factura() {
+		
+	}
+	
+	
+	
+}

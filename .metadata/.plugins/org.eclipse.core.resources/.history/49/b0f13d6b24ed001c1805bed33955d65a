@@ -1,0 +1,80 @@
+package com.idat.evc02.servicio;
+
+import java.text.SimpleDateFormat;
+import java.time.Duration;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+public class Factura {
+	private String NumFac;
+	private String Cliente;
+	private String FechaVenta;
+	private String FechaVencimiento;
+	private double MontoTotal;
+	
+	
+	public long DiasVencidos() {
+		
+		
+		
+		
+		LocalDate f_vencimiento=LocalDate.parse(getFechaVencimiento());
+		LocalDate f_venta=LocalDate.parse(getFechaVenta());
+		Duration dd=Duration.between(f_vencimiento.atStartOfDay(), f_venta.atStartOfDay());
+		return dd.toDays();
+		
+	}
+	public String getNumFac() {
+		return NumFac;
+	}
+	public void setNumFac(String numFac) {
+		NumFac = numFac;
+	}
+	public String getCliente() {
+		return Cliente;
+	}
+	public void setCliente(String cliente) {
+		Cliente = cliente;
+	}
+	public String getFechaVenta() {
+		return FechaVenta;
+	}
+	public void setFechaVenta(String fechaVenta) {
+		FechaVenta = fechaVenta;
+	}
+	public String getFechaVencimiento() {
+		return FechaVencimiento;
+	}
+	public void setFechaVencimiento(String fechaVencimiento) {
+		FechaVencimiento = fechaVencimiento;
+	}
+	public double getMontoTotal() {
+		return MontoTotal;
+	}
+	public void setMontoTotal(double montoTotal) {
+		MontoTotal = montoTotal;
+	}
+	public Factura(String numFac, String cliente, String fechaVenta, String fechaVencimiento, double montoTotal) {
+		super();
+		NumFac = numFac;
+		Cliente = cliente;
+		FechaVenta = fechaVenta;
+		FechaVencimiento = fechaVencimiento;
+		MontoTotal = montoTotal;
+	}
+	public Factura() {
+		
+	}
+	
+	private Date ExtraeFecha(String fecha) {
+		
+		String []list =fecha.split(".");
+		for(String i:list) {
+			System.out.println(i);
+		}
+		Date dt_Fecha=new Date(Integer.parseInt(list[0]),Integer.parseInt(list[1]),Integer.parseInt(list[2]));
+		return dt_Fecha;
+	}
+	
+}

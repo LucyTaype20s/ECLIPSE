@@ -1,0 +1,5 @@
+package com.idat.evc02.servicio;
+
+public class Factura {
+
+}

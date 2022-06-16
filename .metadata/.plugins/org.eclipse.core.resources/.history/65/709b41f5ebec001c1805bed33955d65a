@@ -1,0 +1,27 @@
+package com.idat.evc02.servicio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.jws.WebService;
+
+@WebService
+public class ServicioFactura {
+	public List<Factura> ListadoFacturas(List<Factura>lista) {
+		
+		List<Factura> list_fact=new ArrayList<Factura>();
+		
+		for(int i=0;i<lista.size();i++) {
+			System.out.println("************************************************");
+			System.out.println("Factura N°_"+(i+1)+" :");
+			System.out.println("-------");
+			System.out.println(lista.get(i).getNumFac());
+			System.out.println(lista.get(i).getCliente());
+			System.out.println(lista.get(i).getFechaVenta());
+			System.out.println(lista.get(i).getFechaVencimiento());
+			System.out.println(lista.get(i).getMontoTotal());
+		}
+		
+		return lista;
+	}
+}
